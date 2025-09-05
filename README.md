@@ -1,12 +1,47 @@
-# React + Vite
+# 🤖 Google Gemini Chatbot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **AI-powered chatbot** built with **React + Vite** and integrated with **Google Gemini API**.  
+This project demonstrates how to use Google’s latest generative AI models in a frontend application with a clean and responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- ⚡ Built with **React + Vite** for fast performance  
+- 💬 Real-time chat with **Google Gemini API**  
+- 🎨 Responsive and clean UI using modern CSS/Frameworks  
+- 🔑 Secure API handling with environment variables  
+- 🛠️ Easy to customize and extend  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```
+project-root/
+│── public/ # Static assets
+│── src/
+│ ├── components/ # Reusable React components
+│ ├── pages/ # Page-level components
+│ ├── App.jsx # Main app entry
+│ └── main.jsx # Vite entry point
+│── .env # API keys (not committed)
+│── package.json
+│── vite.config.js
+└── README.md
+```
+
+## 🖥️ Usage
+
+- Type your message in the input box
+- The chatbot will respond using Google Gemini model
+- Customize prompts and styles in src/components/ChatBot.jsx
+
+## Features
+- React + Vite based project
+- Google Gemini API integration
+- Fast and responsive UI
+- Easy to customize
+
+
+📸 Screenshots:
+(Add your screenshots here)
