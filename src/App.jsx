@@ -8,7 +8,7 @@ const ai = new GoogleGenAI({
 
 function App() {
   const [messages, setMessages] = useState([
-    { role: "assistant", text: "Hi 👋, I am Gemini Chatbot. How can I help you?" }
+    { role: "assistant", text: "<b style='color:blue;'>Hii 👋, I am Rohit Singh AI Assistence. How can I help you? </b>" }
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -24,14 +24,14 @@ function App() {
 
     try {
       const response = await ai.models.generateContent({
-        model: "gemini-1.5-flash", // ✅ more stable model
+        model: "gemini-1.5-flash", 
         contents: `Please answer the following question in a clear, systematic, step-by-step format with numbered points or bullet points:\n\n${input}`,
       });
 
-      // Format bot reply (line breaks + bold)
+      
       const botReply = (response.text || "⚠️ No response received.")
-        .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>") // bold text
-        .replace(/\n/g, "<br/>"); // line breaks
+        .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>") 
+        .replace(/\n/g, "<br/>"); 
 
       setMessages([...newMessages, { role: "assistant", text: botReply }]);
     } catch (error) {
@@ -50,7 +50,6 @@ function App() {
       <h1 className="chat-title">🤖 Gemini Chatbot</h1>
 
       <div className="main-chat-box">
-        {/* Messages */}
         {messages.map((msg, index) => (
           <div
             key={index}
@@ -60,7 +59,6 @@ function App() {
                 : "bg-gray-200 text-left"
             }`}
           >
-            {/* render with HTML formatting */}
             <span
               className="block"
               dangerouslySetInnerHTML={{ __html: msg.text }}
@@ -69,7 +67,6 @@ function App() {
         ))}
         {loading && <p className="text-gray-500">Typing...</p>}
 
-        {/* Input Box */}
         <div className="input-box">
           <input
             type="text"
