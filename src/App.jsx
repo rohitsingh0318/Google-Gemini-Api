@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className="chat-title">🤖 Gemini Chatbot</h1>
+      <h1 className="chat-title">🤖 Gemini Chatbot 🤖</h1>
 
       <div className="main-chat-box">
         {messages.map((msg, index) => (
