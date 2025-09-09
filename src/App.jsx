@@ -3,12 +3,12 @@ import { GoogleGenAI } from "@google/genai";
 import "./App.css";
 
 const ai = new GoogleGenAI({
-  apiKey: "AIzaSyC5-7nb4w787MhLvBgOSdqtkX5oBJqqlmo", // 👈 yaha apni Gemini API key daalna
+  apiKey: "AIzaSyC5-7nb4w787MhLvBgOSdqtkX5oBJqqlmo", 
 });
 
 function App() {
   const [messages, setMessages] = useState([
-    { role: "assistant", text: "<b style='color:blue;'>Hii 👋, I am Rohit Singh AI Assistence. How can I help you? </b>" }
+    { role: "assistant", text: "<b style='color:blue;'>Hii , I am Rohit Singh AI Assistence. How can I help you? </b>" }
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -29,7 +29,7 @@ function App() {
       });
 
       
-      const botReply = (response.text || "⚠️ No response received.")
+      const botReply = (response.text || " No response received.")
         .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>") 
         .replace(/\n/g, "<br/>"); 
 
@@ -38,7 +38,7 @@ function App() {
       console.error(error);
       setMessages([
         ...newMessages,
-        { role: "assistant", text: "❌ Error: Could not fetch response." },
+        { role: "assistant", text: " Error: Could not fetch response." },
       ]);
     } finally {
       setLoading(false);
