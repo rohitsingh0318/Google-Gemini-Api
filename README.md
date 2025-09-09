@@ -5,6 +5,8 @@ This project demonstrates how to use Google’s latest generative AI models in a
 
 ---
 
+**live link use chat bot** :  https://google-gemini-api-taupe.vercel.app/
+
 ## 🚀 Features
 - ⚡ Built with **React + Vite** for fast performance  
 - 💬 Real-time chat with **Google Gemini API**  
