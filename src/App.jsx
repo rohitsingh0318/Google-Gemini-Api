@@ -3,7 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 import "./App.css";
 
 const ai = new GoogleGenAI({
-  apiKey: "AIzaSyC5-7nb4w787MhLvBgOSdqtkX5oBJqqlmo", 
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY,
 });
 
 function App() {
